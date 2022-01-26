@@ -20,7 +20,6 @@
 	</th>
    </tr>
   <tr>
-
     <th>Log Loss</th>
     <th>Accuracy</th>
     <th>Log Loss</th>
