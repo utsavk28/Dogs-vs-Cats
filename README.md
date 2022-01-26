@@ -7,7 +7,7 @@
 <br>
 <br>
 
-<table>
+<table align="center">
 	<tr>
 	<th colspan="2">
 		Model
