@@ -9,13 +9,10 @@
 
 <table align="center">
 	<tr>
-	<th colspan="2">
+	<th rowspan="2">
 		Model
 	</th>
-	<th colspan="2" >
-		Training
-	</th>
-	<th colspan="2" >
+	<th  >
 		Testing
 	</th>
    </tr>
@@ -29,7 +26,7 @@
   </tr>
     <tr>
 	  <td rowspan="2" >CNN </td>
-	  <td>link</td>
+	  <td>-</td>
 	  <td>0.3311</td>
 	  <td>95.88%</td>
 	  <td>0.5734</td>
