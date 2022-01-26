@@ -27,7 +27,7 @@
     <th>Accuracy </th>
   </tr>
     <tr>
-	  <td rowspan="2" colspan="2"   text-align="center" >CNN </td>
+	  <td rowspan="2" colspan="2"  align="center" >CNN </td>
 <!-- 	  <td>-</td> -->
 	  <td>0.3311</td>
 	  <td>95.88%</td>
