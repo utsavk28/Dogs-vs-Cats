@@ -1,4 +1,4 @@
-# Cats-vs-Dogs
+# Dogs-vs-Cats
 
 <a href="https://github.com/utsavk28/Cats-vs-Dogs">
     <img src="./images/Dogs vs. Cats.png" alt="Logo" >
