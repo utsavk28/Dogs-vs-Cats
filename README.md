@@ -9,7 +9,7 @@
 
 <table align="center">
     <tr>
-	<th rowsspan="2" colspan="2">
+	<th rowspan="2" colspan="2">
 		Model
 	</th>
 	<th colspan="2" >
@@ -20,6 +20,7 @@
 	</th>
    </tr>
   <tr>
+<!--     <th colspan="2"></th> -->
     <th>Log Loss</th>
     <th>Accuracy</th>
     <th>Log Loss</th>
