@@ -27,15 +27,15 @@
     <th>Accuracy </th>
   </tr>
     <tr>
-	  <td rowspan="2" >CNN </td>
-	  <td>-</td>
+	  <td rowspan="2" colspan="2" >CNN </td>
+<!-- 	  <td>-</td> -->
 	  <td>0.3311</td>
 	  <td>95.88%</td>
 	  <td>0.5734</td>
 	  <td>86.91%</td>
   </tr>
      <tr>
-	  <td>-</td>
+<!-- 	  <td>-</td> -->
 	  <td>0.1408 </td>
 	  <td>95.51%</td>
 	  <td>0.3675 </td>
