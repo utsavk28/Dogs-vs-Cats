@@ -87,8 +87,19 @@ def cnn_model2(img_height, img_width, channels):
     
     return model
 
+def tf_modelD1(IMAGE_SHAPE,feature_extractor_model) :
+    feature_extractor_layer = hub.KerasLayer(
+        feature_extractor_model,
+        input_shape=IMAGE_SHAPE,
+        trainable=False)
 
-def tf_model(IMAGE_SHAPE,feature_extractor_model) :
+    model = Sequential([
+        feature_extractor_layer,
+        Dense(2, activation='softmax')
+    ])
+    return model
+
+def tf_modelD2(IMAGE_SHAPE,feature_extractor_model) :
     feature_extractor_layer = hub.KerasLayer(
         feature_extractor_model,
         input_shape=IMAGE_SHAPE,
@@ -104,15 +115,15 @@ def tf_model(IMAGE_SHAPE,feature_extractor_model) :
 def tf_resnet_model(img_height, img_width, channels):
     IMAGE_SHAPE = (img_height, img_width, channels)
     feature_extractor_model = mobilenet_v2
-    return tf_model(IMAGE_SHAPE,feature_extractor_model)
+    return tf_modelD1(IMAGE_SHAPE,feature_extractor_model)
 
 
 def tf_efficientnet_model(img_height, img_width, channels):
     IMAGE_SHAPE = (img_height, img_width, channels)
     feature_extractor_model = efficientnet_v2
-    return tf_model(IMAGE_SHAPE,feature_extractor_model)
+    return tf_modelD2(IMAGE_SHAPE,feature_extractor_model)
 
 def tf_inception_model(img_height, img_width, channels):
     IMAGE_SHAPE = (img_height, img_width, channels)
     feature_extractor_model = inception_v3
-    return tf_model(IMAGE_SHAPE,feature_extractor_model)
+    return tf_modelD1(IMAGE_SHAPE,feature_extractor_model)
