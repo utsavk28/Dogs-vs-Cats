@@ -8,17 +8,19 @@
 <br>
 
 <table align="center">
-	<tr>
-	<th rowspan="2">
+    <tr>
+	<th rowsspan="2" colspan="2">
 		Model
 	</th>
-	<th  >
+	<th colspan="2" >
+		Training
+	</th>
+	<th colspan="2" >
 		Testing
 	</th>
    </tr>
   <tr>
-    <th>Name</th>
-    <th>Summary</th>
+
     <th>Log Loss</th>
     <th>Accuracy</th>
     <th>Log Loss</th>
