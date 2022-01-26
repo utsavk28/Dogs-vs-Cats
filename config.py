@@ -1,0 +1,17 @@
+input_path = './input'
+output_path = './output'
+batch_size = 64
+img_height = 224
+img_width = 224
+channels = 3
+train = f'{output_path}data/train/'
+validation = f'{output_path}data/val/'
+test = f'{output_path}data/test/'
+mobilenet_v2 = "https://tfhub.dev/google/tf2-preview/mobilenet_v2/classification/4"
+mobilenet_v2_160 = "https://tfhub.dev/sayakpaul/distill_bit_resnet50x1_160_classification/1"
+resnet = "https://tfhub.dev/sayakpaul/distill_bit_resnet50x1_224_classification/1"
+inception_v3 = "https://tfhub.dev/google/imagenet/inception_v3/classification/5"
+efficientnet_v2 = "https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet21k_b0/classification/2"
+TF_NUM_EPOCHS = 20
+TRAIN_NUM_EPOCHS = 20
+EARLY_STOPPING = 5

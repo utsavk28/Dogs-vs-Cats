@@ -1,0 +1,104 @@
+CNN
+    model = Sequential(
+        [
+            Input((img_height, img_width, channels)),
+            Conv2D(32, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(32, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(32, 5, padding='valid', strides=2),
+            BatchNormalization(),
+            ReLU(),
+            MaxPooling2D(pool_size=(2, 2)),
+            Dropout(0.1),
+
+            Conv2D(64, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(64, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(64, 5, padding='valid', strides=2, ),
+            BatchNormalization(),
+            ReLU(),
+            MaxPooling2D(pool_size=(2, 2)),
+            Dropout(0.1),
+
+            Flatten(),
+            Dense(256, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dense(128, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dense(64, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dropout(0.4),
+
+            Dense(2, activation='softmax')
+        ]
+    )
+
+
+CNN2
+    model = Sequential(
+        [
+            Input((img_height, img_width, channels)),
+            Conv2D(32, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(32, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(32, 5, padding='valid', strides=2),
+            BatchNormalization(),
+            ReLU(),
+            MaxPooling2D(pool_size=(2, 2)),
+            Dropout(0.1),
+
+            Conv2D(64, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(64, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Conv2D(64, 5, padding='valid', strides=2, ),
+            BatchNormalization(),
+            ReLU(),
+            MaxPooling2D(pool_size=(2, 2)),
+            Dropout(0.1),
+
+            Conv2D(128, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Dropout(0.1),
+            Conv2D(128, 3, padding='valid', strides=1, ),
+            BatchNormalization(),
+            ReLU(),
+            Dropout(0.1),
+            Conv2D(128, 5, padding='valid', strides=2, ),
+            BatchNormalization(),
+            ReLU(),
+            MaxPooling2D(pool_size=(2, 2)),
+            Dropout(0.1),
+
+            Flatten(),
+            Dense(256, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dense(128, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dense(64, kernel_regularizer=l2(0.01)),
+            BatchNormalization(),
+            ReLU(),
+            Dropout(0.4),
+
+            Dense(2, activation='softmax')
+        ]
+    )
+
+    
